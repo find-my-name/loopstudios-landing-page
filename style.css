@@ -1,0 +1,616 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/desktop/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4em 0;
+}
+
+.main-header .container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.main-header .navbar {
+  font-family: "Alata", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8em;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+.main-header .navbar .menu,
+.main-footer .menu {
+  display: flex;
+  gap: 2em;
+}
+
+.main-header .navbar .menu .item,
+.main-footer .menu .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header .navbar .menu a,
+.main-footer .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.main-header .navbar .menu .line,
+.main-footer .menu .line {
+  visibility: hidden;
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  top: 30px;
+}
+
+.main-header .navbar .menu a:hover + .line,
+.main-footer .menu a:hover + .line {
+  visibility: visible;
+}
+
+.main-header .showcase {
+  font-family: "Josefin Sans", sans-serif;
+  border: 2px solid #fff;
+  width: 650px;
+  color: #fff;
+  margin-bottom: 5em;
+  padding: 2.5em 2.5em 1.6em 2.5em;
+}
+
+.main-header .showcase h1 {
+  text-transform: uppercase;
+  font-size: 4.5em;
+  font-weight: 300;
+}
+
+.main-content {
+  max-width: 80%;
+  margin: 10em auto;
+}
+
+.main-content .vr-hero {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 8em;
+}
+
+.vr-hero .vr-image {
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 78% 35%, 78% 100%, 0 100%);
+}
+
+.main-content .vr-hero .content {
+  margin-left: -3em;
+}
+
+.main-content .vr-hero .content h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+.main-content .vr-hero .content p {
+  color: hsl(0, 0%, 55%);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+.main-content .creations {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main-content .creations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-transform: uppercase;
+  margin-bottom: 4em;
+  align-items: center;
+}
+
+.main-content .creations h1 {
+  color: #000;
+  font-weight: 300;
+  font-size: 3.5em;
+}
+
+.main-content .creations .btn {
+  justify-self: end;
+  width: 200px;
+  text-align: center;
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+  border: 1px solid #000;
+  color: #000;
+  letter-spacing: 4px;
+  padding: 0.6em 2.5em;
+}
+
+.main-content .creations .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.creations .cards {
+  margin-top: 5em;
+  grid-column: 1 / span 2;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.creations .cards .card {
+  width: 100%;
+  height: 500px;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  padding: 0 1em 1em 1.2em;
+  cursor: pointer;
+}
+
+.cards .card:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("/images/desktop/image-deep-earth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards .card:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("/images/desktop/image-night-arcade.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards .card:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("/images/desktop/image-soccer-team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards .card:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("/images/desktop/image-grid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-right: 3em;
+}
+
+.cards .card:nth-child(5) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("/images/desktop/image-from-above.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards .card:nth-child(6) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("/images/desktop/image-pocket-borealis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards .card:nth-child(7) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("/images/desktop/image-curiosity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards .card:nth-child(8) {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("/images/desktop/image-fisheye.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .cards .card:hover {
+  background-color: hsl(0, 0%, 50%);
+  background-blend-mode: screen;
+  color: #000;
+  transition: background 0.2s ease-in-out;
+}
+
+.main-footer {
+  background-color: #000;
+}
+
+.main-footer .wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 3em 0;
+  font-family: "Alata", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+
+.main-footer .menu {
+  gap: 2.5em;
+}
+
+.main-footer .menu a {
+  font-size: 15px;
+  color: hsl(0, 0%, 90%);
+  letter-spacing: 0.2px;
+}
+
+.main-footer p {
+  color: hsl(0, 0%, 41%);
+  font-size: 15px;
+  justify-self: end;
+}
+
+.main-footer .logo {
+  width: 160px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  justify-self: end;
+}
+
+.social-icons img {
+  width: 28px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.social-icons .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons .item .line {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 130%;
+  background-color: #fff;
+}
+
+.social-icons .item img:hover + .line {
+  visibility: visible;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1360px) {
+  .main-content .vr-hero .vr-image {
+    width: 60%;
+  }
+
+  .main-content .vr-hero .content h1 {
+    font-size: 2.2em;
+  }
+
+  .main-content .vr-hero .content p {
+    font-size: 14px;
+  }
+
+  .creations .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1050px) {
+  .main-content .vr-hero .content h1 {
+    font-size: 2em;
+  }
+
+  .main-content .vr-hero .content p {
+    font-size: 13px;
+  }
+
+  .main-content .creations .navbar h1 {
+    font-size: 3em;
+  }
+
+  .creations .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-footer .container .menu {
+    gap: 1em;
+  }
+}
+
+@media (max-width: 890px) {
+  body.fixed {
+    overflow: hidden;
+  }
+
+  .main-header .showcase {
+    font-family: "Josefin Sans", sans-serif;
+    border: 2px solid #fff;
+    max-width: 100%;
+    color: #fff;
+    margin-bottom: 5em;
+    padding: 2.5em 2.5em 1.6em 2.5em;
+  }
+
+  .main-header .navbar .logo {
+    z-index: 1000;
+  }
+
+  .main-header .navbar .menu {
+    display: none;
+  }
+
+  .main-content .vr-hero {
+    flex-direction: column;
+    gap: 4em;
+  }
+
+  .main-content .vr-hero .vr-image {
+    clip-path: none;
+    width: 100%;
+  }
+
+  .main-content .vr-hero .content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .main-content .vr-hero .content p {
+    font-size: 16px;
+  }
+
+  .main-content .vr-hero .content h1 {
+    font-size: 2em;
+  }
+
+  .main-content .creations .navbar h1 {
+    font-size: 2.5em;
+  }
+
+  .hamburger-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("/images/icon-hamburger.svg") center / contain no-repeat;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.2s ease-in-out;
+  }
+
+  .hamburger-icon.open {
+    background: url("/images/icon-close.svg") center / contain no-repeat;
+  }
+
+  .menu-container {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .mobile-menu {
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    gap: 2em;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5em;
+  }
+
+  .mobile-menu a:hover {
+    color: #999;
+  }
+
+  .hidden {
+    visibility: hidden;
+    width: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-header {
+    background: url("/images/mobile/image-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .main-header .showcase {
+    margin: 15em 0;
+  }
+
+  .main-header .showcase h1 {
+    font-size: 2.1em;
+  }
+
+  .main-content {
+    max-width: 90%;
+  }
+
+  .main-content .creations {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .main-content .creations h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .main-content .creations .btn {
+    justify-self: center;
+    grid-row: 3;
+    margin-top: 3em;
+  }
+
+  .creations .cards {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+    margin-top: 2em;
+  }
+
+  .creations .cards .card {
+    width: 100%;
+    height: 240px;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    padding: 0 1em 1em 1.2em;
+    cursor: pointer;
+  }
+
+  .cards .card:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url("/images/mobile/image-deep-earth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cards .card:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url("/images/mobile/image-night-arcade.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cards .card:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url("/images/mobile/image-soccer-team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cards .card:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url("/images/mobile/image-grid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 3em;
+  }
+
+  .cards .card:nth-child(5) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url("/images/mobile/image-from-above.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cards .card:nth-child(6) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url("/images/mobile/image-pocket-borealis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cards .card:nth-child(7) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url("/images/mobile/image-curiosity.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cards .card:nth-child(8) {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+      url("/images/mobile/image-fisheye.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cards .card p {
+    max-width: 50%;
+  }
+
+  .main-footer .wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .main-footer .menu {
+    flex-direction: column;
+    gap: 1.5em;
+    grid-row: 2;
+    margin: 1em 0;
+  }
+
+  .social-icons,
+  .main-footer p {
+    justify-self: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    margin: 5em auto;
+  }
+
+  .main-header .showcase {
+    margin: 10em 0;
+  }
+
+  .mobile-menu {
+    font-size: 12px;
+  }
+
+  .creations .cards .card {
+    height: 150px;
+    padding: 0.5em;
+  }
+
+  .creations .cards .card p {
+    font-size: 0.8em;
+  }
+}
